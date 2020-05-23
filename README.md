@@ -4,7 +4,7 @@ Excerpt: In this Unity3D tutorial you will learn a simple way to move the camera
 
 If you have tried `RotateAround()` and it's not working for you, you have come to the right place.
 
-You can jump to [the solution](#the_solution "The solution") at the end of the post, download [the project](http://www.github.com/asdfasdf), or follow the tutorial in [video](http://youtube.com/asdfasdf) format.
+You can jump to [the solution](#solution) at the end of the post, download, or follow the tutorial in [video](https://www.youtube.com/watch?v=rDJOilo4Xrg) format.
 
 ## Table of contents
 
@@ -16,7 +16,7 @@ You can jump to [the solution](#the_solution "The solution") at the end of the p
 
 ## We want to program the camera so that it rotates around an object in the scene, while looking at it, responding to player input
 
-![Desired result]()
+![Desired result](https://github.com/EmmaPrats/Camera-Rotation-Tutorial/blob/master/Tutorial%20Assets/goodrotation.gif)
 
 As you can see, the camera is doing the **yaw** and **pitch** rotations.
 
@@ -129,7 +129,7 @@ cam.transform.RotateAround(target.transform.position, new Vector3(1, 0, 0), rota
 cam.transform.RotateAround(target.transform.position, new Vector3(0, 1, 0), rotationAroundYAxis);
 ```
 
-![Wrong camera movement]()
+![Wrong camera movement](https://github.com/EmmaPrats/Camera-Rotation-Tutorial/blob/master/Tutorial%20Assets/badrotation.gif)
 
 As you can see, it works, but it probably doesn’t yield the result you want:
 
@@ -141,7 +141,7 @@ We will use [`Rotate(Vector3 axis, float angleInDegrees, Space relativeTo)`](htt
 
 ### Solution
 
-![Desired result]()
+![Desired result](https://github.com/EmmaPrats/Camera-Rotation-Tutorial/blob/master/Tutorial%20Assets/goodrotation.gif)
 
 ```csharp
 public class CameraMovement : MonoBehaviour

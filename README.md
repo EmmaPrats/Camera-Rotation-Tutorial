@@ -24,7 +24,7 @@ _(Note: The method explained in this post can be applied to movement caused by a
 
 **We want that a drag from one side of the screen to the other rotates us 180º around the object. How do we do that?**
 
-![Requirements]()
+![Requirements](https://github.com/EmmaPrats/Camera-Rotation-Tutorial/blob/master/Tutorial%20Assets/requirements.gif)
 
 The screen (the _viewport_ rather) has a size of 1x1 in viewport coordinates.
 
@@ -193,16 +193,16 @@ By default, `Rotate()` and `RotateAround()` use the GameObject's local axes (in 
 
 `Rotate()` simply rotates the object in its place. **When you rotate _around something_, you are also translating**. That's why we must call `cam.transform.Translate()`. The order in which you do it matters:
 
-* If you `Rotate()` first and `Translate()` second, you are rotating your axes, and then moving "according" //TODO find a better word to them.
+* If you `Rotate()` first and `Translate()` second, you are rotating your axes, and then moving "according" to them.
 * If you `Translate()` first and `Rotate()` second, you are moving "according" to the world's axes, and then rotating around yourself in your new position.
 
-![Rotation order explanation]()
+![Rotation order explanation](https://github.com/EmmaPrats/Camera-Rotation-Tutorial/blob/master/Tutorial%20Assets/rottrans-transrot.png)
 
 So what we need to do for this application is:
 
 **Each frame, we set the camera's position as the target's position. Then we apply the rotations. Finally, we translate the camera back `distanceToTarget` units in -Z**
 
-![Rotation visualization]()
+![Rotation visualization](https://github.com/EmmaPrats/Camera-Rotation-Tutorial/blob/master/Tutorial%20Assets/cameramovement.png)
 
 ### Extra credit: Modify the rotation speed
 

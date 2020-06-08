@@ -1,8 +1,6 @@
 # How to rotate the camera around an object in Unity3D
 
-Excerpt: In this Unity3D tutorial you will learn a simple way to move the camera around an object in the scene while always looking at it. I shared all of the code, and I added a link to where you can download the full Unity project too.
-
-If you have tried `RotateAround()` and it's not working for you, you have come to the right place.
+In this Unity3D tutorial you will learn a simple way to move the camera around an object in the scene while always looking at it. If you have tried `RotateAround()` and it's not working for you, you have come to the right place :)
 
 You can jump to [the solution](#solution) at the end of the post, download, or follow the tutorial in [video](https://www.youtube.com/watch?v=rDJOilo4Xrg) format.
 
